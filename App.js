@@ -32,7 +32,7 @@ export default function App() {
         ];
       });
     } else {
-      Alert.alert('OOPS!', 'Todos Must be over 3 Characeters Long...', [
+      Alert.alert('OOPS!', 'Todos Must be over 3 character Long...', [
         { text: 'Understood', onPress: () => console.log('Alert Closed') }
       ]);
     }
@@ -40,7 +40,6 @@ export default function App() {
   }
   return (
     <TouchableWithoutFeedback onPress={() => {
-      Keyboard.dismiss()
     }}>
       <View style={styles.container}>
         <StatusBar style="light"/>
@@ -64,7 +63,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#E3F2FD',
   },
   content: {
     flex : 1,
